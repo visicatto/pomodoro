@@ -18,20 +18,20 @@ class Cronometro extends StatelessWidget {
           children: [
             Text(
               store.estaTrabalhando() ? 'Time to Work' : 'Time to Break',
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 40,
                 color: Colors.white,
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Text(
               '${store.minutos.toString().padLeft(2, '0')}:${store.segundos.toString().padLeft(2, '0')}',
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 120,
                 color: Colors.white,
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
